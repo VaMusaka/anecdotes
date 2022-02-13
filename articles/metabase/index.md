@@ -39,8 +39,11 @@
     - Once you are happy with your settings **create instance**
 
 
-> **NOTE:** In this repository is an `install.sh`  which will take care of all the steps described below with additional configurations. This script will install docker, PostgresQL, setup the database user and enable docker access to the database as well as install and run the Metabase container. To install with this method simple run `sudo ./install.sh`. Follow any instructions whenever prompted for input, alternatively, follow the steps below to install and configure each component on its own. 
-
+> **NOTE:** Download the [article's directory](https://github.com/VaMusaka/anecdotes/tree/gh-pages/articles/metabase) with the `install.sh` should take care of all the steps described below without needing any extra configurations. 
+>
+> This script will install docker, PostgresQL, setup the database user and enable docker access to the database as well as install and run the Metabase container. 
+> 
+> To install with this method simple run `sudo ./install.sh`. Follow any instructions whenever prompted for input, alternatively, follow the steps below to install and configure each component on its own. 
 
 1. Install Docker 
    - Connect to your instance via ssh 
