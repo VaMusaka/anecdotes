@@ -1,19 +1,22 @@
-# Lightly Sail Metabase in 10 minutes
+# Lightly sail Metabase in 10 minutes
 
+[<img src="./img/article_logo.png" width="500"/>](image.png)
 ## Prerequisites 
-- AWS Lightsail
-- Docker
-- PostgresSQL
-- MongoDB
+> This article assumes some knowledge of the different technologies below although not essentials. 
+- <a href="https://aws.amazon.com/lightsail" target="_blank">AWS Lightsail</a>: A way to build applications and websites fast with low-cost, pre-configured cloud resources. We will use this to host Docker container with Metabase and also as a host for the PostgreSQL database.
+- <a href="" target="_blank">Docker</a> : A software platform that allows you to build, test, and deploy applications quickly. This will be used to run the Metabase application.
+- <a href="" target="_blank">PostgresSQL</a> : A powerful, open source object-relational database which we will use to store out Metabase (meta) data and configurations. this will allow us to update turn off and rebuild the docker container without losing our data.
+- <a href="" target="_blank">Metabase </a> : An open source business intelligence tool that lets you create charts and dashboards using data from a variety of databases and data sources.
 
 
+## Background 
 > I have searched the internet for a simple (Open Source) Analytics Platform that can be integrated with a many data sources and MongoDb in particular. Another important use case was interactivity and embedded analytics. I found Metabase to tick all the boxes and their pricing and open source offering made this even more attractive. 
 
 > Having played around with docker (knowing just enough to be dangerous) I decided to test metabase and look around using a local version and it because apparent to me that l needed a production version to not lose any of the work i had done while exploring. 
 
 > Although the tutorials for [Deploying new version of Metabase on Elastic Beanstalk](https://www.metabase.com/docs/latest/operations-guide/running-metabase-on-elastic-beanstalk.html) was is very extensive and a good place to start, however, i decided to go a different direction. My ultimate goal was to run Metabase on a simple aws lightsail instance as a docker container and below are the steps of how l did it. 
 
-
+## Installation
 1. Create an AWS Account
    
    Got to [AWS Console](aws.amazon.com) and create an account if you do not already have one. As a new user Amazon provides a free tier where you can create some resources for free without paying anything for the first year from the day you create an account. 
