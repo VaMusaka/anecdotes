@@ -1,5 +1,3 @@
-<div style="max-width:720px; margin:auto">
-
 # Lightly sail Metabase in 10 minutes
 
 [<img src="./img/article_logo.png" width="720"/>](image.png)
@@ -122,5 +120,3 @@
 5. Finally using your lightsail's IP Address confirm that metabase is up and running from your browser http://{IP}/setup. If everything is set up correctly page should show a metabase welcome message as shown below. 
    
 ![Welcome Page](./img/metabase_welcome.png)
-
-</div>
