@@ -1,37 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>VaMusaka's anecdotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>VaMusaka's anecdotes</title>
+    <style>
+        .jumbotron {
+            color: rgb(255, 255, 255);
+            background-image: url("https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib?q=80&fm=jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+        }
+    </style>
+    
 </head>
 
 <body>
-    <div style="max-width:720px; margin:auto">
+    <div class="jumbotron jumbotron-fluid  d-flex align-items-end mb-4">
+        <div class="container">
 
-        <h2>Articles</h2>
-        
-        <hr />
+          <h1 class="d-flex flex-row-reverse  display-3">VaMusaka's Anecdotes</h1>
+                <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+                <!-- <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p> -->
+        </div>
+      </div>
 
-        <h3><a href="https://vamusaka.github.io/anecdotes/articles/metabase"> Installing Metabase on AWS LightSail</a></h3>
-        
-        <div style="display:flex">
-            <div style="max-width:30%; margin: 3%">
-            
-                <a href="./articles/metabase/img/article_logo.png"><img src="./articles/metabase/img/article_logo.png" width="250"/>]</a>            
-            </div>
-        
-            <div style="max-width:60%; margin:3%">
-                
-                <h4> Lightly sail Metabase in 10 minutes</h4>
-                <blockquote> In this anecdote I describes my experience with installing Metabase (An awesome Open Source BI tool) on an aws LightSail instance. The [article code](https://github.com/VaMusaka/anecdotes/tree/gh-pages/articles/metabase) contains bash scricts to replicate this procress step by step. This can be set up from the install script provided or individual scripts for each step. <sub>Happy Reading<sub></blockquote>
-                
-                <i><b>Published</b>: 14 Feb 22</i>        
+    <div class="container mt-4 pb-4">
+
+        <!-- <h1 class="display-5"> Articles</h1> -->
+
+        <!-- <hr class="mt-2 mb-5"/> -->
+
+        <div class="card border border-3 rounded-3 border-secondary " style="width: 25rem;">
+            <img class="card-img-top" alt="article_logo" src="./articles/metabase/img/article_logo.png" />
+            <hr />
+            <div class="card-body">
+                <h5 class="card-title text-muted">Installing Metabase on AWS LightSail</h5>        
+                <p class="card-text text-muted">
+                    In this anecdote I describes my experience with installing Metabase (An awesome Open Source BI tool)
+                    on an aws LightSail instance.
+                    The <a href="https://github.com/VaMusaka/anecdotes/tree/gh-pages/articles/metabase"> article
+                        code</a> contains bash scripts to
+                    replicate this process step by step. This can be set up from the install script provided or
+                    individual scripts for each step.
+                    <br />
+                    <sub>Happy Reading<sub>                        
+                </p>
+                <p class="card-text"><small class="text-muted">Last updated 15 Feb 2022</i></small></p>
+
+                <a href="https://vamusaka.github.io/anecdotes/articles/metabase" class="btn btn-primary  btn-outlined">Lightly sail
+                    Metabase in 10 minutes</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
-
-
-
-
-
