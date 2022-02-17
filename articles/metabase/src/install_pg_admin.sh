@@ -24,4 +24,4 @@ sudo apt install pgadmin4-desktop
 sudo apt install pgadmin4-web 
 
 # Configure the webserver, if you installed pgadmin4-web:
-sudo /usr/pgadmin4/bin/setup-web.sh
+# sudo /usr/pgadmin4/bin/setup-web.sh
