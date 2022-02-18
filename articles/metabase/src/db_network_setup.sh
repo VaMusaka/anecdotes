@@ -43,7 +43,9 @@ cd $installed_version_dir/main
 #
 # Set up postgress to be accessible from docker.
 #
-sudo echo "host     all     all     0.0.0.0/0       trust" >>  pg_hba.conf
+sudo echo "host     all     all     172.17.0.1/16       trust" >>  pg_hba.conf
+sudo echo "host     all     all     0.0.0.0/32          trust" >>  pg_hba.conf
+
 
 #
 # Allow Postgres to listen to all addresses not just localhost

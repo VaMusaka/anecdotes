@@ -11,12 +11,14 @@ read password
 
 ip=$(hostname -I | grep -o "^[0-9.]*")
 
-sudo -u postgres psql -c "CREATE USER $username WITH PASSWORD $password"
+sudo -u postgres psql -c "CREATE USER $username WITH PASSWORD '$password'"
 
 #
 # Add user to super user group
 #
 sudo -u postgres psql -c "ALTER USER $username WITH SUPERUSER"
+
+sudo -u postgres psql-tc "SELECT 1 FROM pg_database WHERE datname = 'metabase'" | grep -q 1 || psql -U postgres -c "CREATE DATABASE metabase WITH OWNER $username"
 
 #
 # Start Metabase contected to the database
