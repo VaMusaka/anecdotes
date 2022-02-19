@@ -67,3 +67,27 @@ fi
 # Restart postgres
 #
 sudo systemctl restart postgresql
+
+#
+# Create a new user and set password
+#
+echo Enter username: 
+read username
+
+echo Enter password: 
+read password
+
+# 
+# Create database user account 
+# 
+sudo -u postgres psql -c "CREATE USER $username WITH PASSWORD '$password'"
+
+#
+# Add user to super user group
+#
+sudo -u postgres psql -c "ALTER USER $username WITH SUPERUSER"
+
+#
+# Create Metabase database if it does not exist
+# 
+sudo -u postgres psql-tc "SELECT 1 FROM pg_database WHERE datname = 'metabase'" | grep -q 1 || psql -U postgres -c "CREATE DATABASE metabase WITH OWNER $username"
